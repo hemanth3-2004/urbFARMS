@@ -1,13 +1,12 @@
 import React from "react";
+import Boxes from "./components/homePage/Boxes";
 
 function App() {
-
-
   return (
     <>
- <p className='text-red-500 font-bold'>PRoject title</p>
+      <Boxes />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
