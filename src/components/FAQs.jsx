@@ -137,15 +137,3 @@ const FAQ = () => {
 
 export default FAQ;
 
-const gridItems = [
-    { id: 1, image: "https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/05/spinach-1296x728-header.jpg?w=1155&h=1528", label: "Spinach", method: "Raised beds or containers", harvest: "30–45 days", light: "4–6 hours sunlight", profitability: "₹5,000–₹8,000 per cycle" },
-    { id: 2, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqlLj6jk63svjLINu8X3irM-3Re7C09-4FwQ&s", label: "Mint", method: "Pots or grow bags", harvest: "60–75 days", light: "Partial sun, 3–4 hours", profitability: "₹3,000–₹6,000 per cycle" },
-    { id: 3, image: "https://images5.alphacoders.com/105/1050319.jpg", label: "Lettuce", method: "Hydroponics or containers", harvest: "30–40 days", light: "10–12 hours sunlight or grow light", profitability: "₹6,000–₹10,000 per cycle" },
-    { id: 4, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5PZr4HYwvPevDSgCv_w6WBNt0SNDmsQn4w&s", label: "Cherry Tomatoes", method: "Vertical farming or grow bags", harvest: "60–80 days", light: "6–8 hours full sun", profitability: "₹7,000–₹12,000 per cycle" },
-    { id: 5, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXzQMG6TrNpwX3YndRbpVA6zhqKvfFyUttpw&s", label: "Saffron", method: "Raised beds or containers", harvest: "30–45 days", light: "4–6 hours sunlight", profitability: "₹5,000–₹8,000 per cycle" },
-    { id: 6, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-obwJit4ERYEsdAHkERg0p9k7sNz6SFEi9g&s", label: "Strawberry", method: "Pots or grow bags", harvest: "60–75 days", light: "Partial sun, 3–4 hours", profitability: "₹3,000–₹6,000 per cycle" },
-    { id: 7, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsMOLPCs1a-F_sO-l0bK2puuEQPi9mMqQ0Ug&s", label: "Bell Pepper", method: "Hydroponics or containers", harvest: "30–40 days", light: "10–12 hours sunlight or grow light", profitability: "₹6,000–₹10,000 per cycle" },
-    { id: 8, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5PZr4HYwvPevDSgCv_w6WBNt0SNDmsQn4w&s", label: "Micro Greens", method: "Vertical farming or grow bags", harvest: "60–80 days", light: "6–8 hours full sun", profitability: "₹7,000–₹12,000 per cycle" },
-    { id: 9, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjadxqGGE8TV9QYDoBNUt54btyj5iME34KJg&s", label: "Stevia", method: "Vertical farming or grow bags", harvest: "60–80 days", light: "6–8 hours full sun", profitability: "₹7,000–₹12,000 per cycle" },
-
-  ];

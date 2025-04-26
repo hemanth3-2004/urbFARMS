@@ -47,7 +47,7 @@ const CropProfitCalculator = () => {
 
   return (
     <div className="max-w-md mx-auto p-4 shadow-xl rounded-2xl bg-gradient-to-br from-gray-100 to-green-100 border border-green-300 overflow">
-      <h2 className="text-xl font-bold mb-4 text-green-800">🌱 Crop Profit Calculator</h2>
+      <h2 className="text-xl font-bold mb-4 text-green-800">🌱 Profit Estimator</h2>
       <div className="space-y-4 text-gray-800">
         <div>
           <label>Available Area (sq. ft):</label>

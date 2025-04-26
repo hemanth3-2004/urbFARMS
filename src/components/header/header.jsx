@@ -37,7 +37,7 @@ const Header = () => {
             <h2 className='text-[1.1em]'>Crops</h2>
           </Link>
           <button className="rounded-full py-1 px-4 text-white hover:bg-white hover:text-black transition" onClick={handleClick}>
-            <h2 className='text-[1.1em]'>Calculator</h2>
+            <h2 className='text-[1.1em]'>Profit Estimator</h2>
           </button>
         </div>
 
