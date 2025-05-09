@@ -4,75 +4,45 @@ import CropProfitCalculator from '../calculator';
 
 const Header = () => {
   const [calci, setCalci] = useState(false);
-  const handleClick = () => setCalci(!calci);
+  function handleClick() {
+    setCalci(!calci);
+  }
 
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] xl:min-h-[100vh] flex flex-col overflow-hidden"
+      className="relative bg-cover bg-center bg-no-repeat h-[100em] sm:h-[500px] md:h-[600px] flex flex-col overflow-hidden"
       style={{
         backgroundImage:
           'url(https://coolwallpapers.me/picsup/5478573-village-wallpapers.jpg)',
       }}
     >
-      {/* ---- Header Navigation ---- */}
-      <div className="backdrop-blur-sm bg-white/20 rounded-full mx-4 sm:mx-8 md:mx-10 flex flex-wrap sm:flex-nowrap justify-between items-center px-4 sm:px-8 py-2 mt-4 sm:mt-6">
+      {/* ---- Header at the Top ---- */}
+      <div className="backdrop-blur-sm bg-white/20 rounded-3xl mx-4 px-6 py-3 mt-5 flex flex-wrap sm:flex-nowrap items-center justify-between gap-y-4">
+        
         {/* Project Title */}
-        <div className="mb-2 sm:mb-0">
-          <button className="rounded-full text-white text-lg sm:text-xl">
-            <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/">
-              <h2 className="text-[1.2em] sm:text-[1.4em]">
-                urb<span className="font-bold">FARMS</span>
-              </h2>
-            </Link>
-          </button>
+        <div className="w-full sm:w-auto text-center sm:text-left">
+          <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/">
+            <h2 className="text-white text-xl sm:text-2xl">urb<span className="font-bold">FARMS</span></h2>
+          </Link>
         </div>
 
-        {/* Navigation */}
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-          <Link
-            className="rounded-full py-1 px-4 text-white hover:bg-white hover:text-black transition"
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            to="/"
-          >
-            <h2 className="text-base sm:text-[1.1em]">Home</h2>
-          </Link>
-          <Link
-            className="rounded-full py-1 px-4 text-white hover:bg-white hover:text-black transition"
-            to="/info"
-          >
-            <h2 className="text-base sm:text-[1.1em]">Info</h2>
-          </Link>
-          <Link
-            className="rounded-full py-1 px-4 text-white hover:bg-white hover:text-black transition"
-            to="/crops"
-          >
-            <h2 className="text-base sm:text-[1.1em]">Crops</h2>
-          </Link>
-          <button
-            className="rounded-full py-1 px-4 text-white hover:bg-white hover:text-black transition"
-            onClick={handleClick}
-          >
-            <h2 className="text-base sm:text-[1.1em]">Profit Estimator</h2>
-          </button>
-        </div>
-
-        {/* FAQ */}
-        <div className="mt-2 sm:mt-0">
-          <button className="rounded-full py-1 px-4 text-white hover:bg-white hover:text-black transition">
-            <Link to="/faq">
-              <h2 className="text-base sm:text-[1.1em]">F.A.Qs</h2>
-            </Link>
-          </button>
+        {/* Navigation Buttons */}
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 w-full sm:w-auto text-white text-base">
+          <Link className="hover:bg-white hover:text-black px-4 py-1 rounded-full transition" to="/">Home</Link>
+          <Link className="hover:bg-white hover:text-black px-4 py-1 rounded-full transition" to="/info">Info</Link>
+          <Link className="hover:bg-white hover:text-black px-4 py-1 rounded-full transition" to="/crops">Crops</Link>
+          <button className="hover:bg-white hover:text-black px-4 py-1 rounded-full transition" onClick={handleClick}>Profit Estimator</button>
+          <Link className="hover:bg-white hover:text-black px-4 py-1 rounded-full transition" to="/faq">F.A.Qs</Link>
         </div>
       </div>
 
-      {/* ---- Hero Section ---- */}
-      <div className="flex-1 flex items-center justify-center px-4 text-center">
-        <div className="space-y-4 max-w-2xl">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wide">
+      {/* ---- Hero Text Section ---- */}
+      <div className="flex-1 flex items-center justify-center px-4">
+        <div className="text-center space-y-4 max-w-2xl mx-auto">
+          <h1 className="text-2xl sm:text-5xl md:text-6xl font-bold text-white tracking-wide leading-tight">
             Start Your <span className="text-green-400">Urban Microfarming</span> with urbFARMS
           </h1>
-          <p className="text-lg sm:text-xl text-gray-200 font-semibold">
+          <p className="text-lg sm:text-2xl text-gray-200 font-bold">
             Your urban oasis of freshness
           </p>
           <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2.5 px-6 rounded-full transition-colors duration-300 text-base sm:text-lg">
@@ -81,14 +51,14 @@ const Header = () => {
         </div>
       </div>
 
-      {/* ---- Calculator Popup ---- */}
+      {/* ---- Calculator Modal ---- */}
       {calci && (
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-          <div className="relative w-full max-w-md">
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 px-4">
+          <div className="relative bg-white rounded-xl shadow-xl max-w-[90vw]">
             <CropProfitCalculator />
             <button
               onClick={handleClick}
-              className="absolute top-2 right-2 bg-white hover:text-blue-600 text-black rounded-full text-xl px-3 py-1"
+              className="absolute top-2 right-2 text-black bg-white border hover:text-red-600 rounded-full text-xl px-3 py-1"
             >
               X
             </button>
