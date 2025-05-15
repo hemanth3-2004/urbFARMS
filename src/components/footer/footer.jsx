@@ -3,38 +3,78 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="backdrop-blur-md bg-green-700 py-16 px-12 mt-16">
-      <div className="max-w-7xl mx-auto flex flex-col space-y-10">
+    <footer className="backdrop-blur-md bg-green-700/90 py-16 px-6 sm:px-12 mt-16">
+      <div className="max-w-7xl mx-auto flex flex-col space-y-12">
 
         {/* Top Section */}
-        <div className="flex flex-row justify-between items-start w-full">
+        <div className="flex flex-col sm:flex-row justify-between items-start w-full space-y-10 sm:space-y-0">
           
-          {/* Left - Logo + Navigation Links Below */}
+          {/* Left - Logo + Navigation */}
           <div className="text-white text-3xl font-bold text-left">
-            <h2 className="text-[2em]">urb<span className="font-extrabold">FARMS</span></h2>
-            <div className="flex space-x-10 mt-6 text-lg ml-1">  {/* Increased gap with mt-6 */}
+            <h2 className="text-[2em]">
+              urb<span className="font-extrabold">FARMS</span>
+            </h2>
+
+            <nav className="flex flex-wrap gap-6 mt-6 text-lg ml-1">
               <Link to="/" className="hover:text-green-300 transition">Home</Link>
               <Link to="/info" className="hover:text-green-300 transition">Info</Link>
               <Link to="/crops" className="hover:text-green-300 transition">Crops</Link>
               <Link to="/faq" className="hover:text-green-300 transition">FAQs</Link>
-            </div>
+            </nav>
           </div>
 
-          {/* Right - Social Media Links + Contact Info */}
-          <div className="flex flex-col text-right text-white text-lg space-y-6">
-            <div className="flex flex-col space-y-3 text-white">  {/* Set text-white for social links */}
-              <a href="#" className="hover:text-green-300 transition">Instagram</a>
-              <a href="#" className="hover:text-green-300 transition">Facebook</a>
-              <a href="#" className="hover:text-green-300 transition">Twitter</a>
+          {/* Right - Social Links & Contact Info */}
+          <div className="flex flex-col text-white text-lg space-y-6 sm:text-right">
+            <div className="flex flex-col space-y-3">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-300 transition"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-300 transition"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-300 transition"
+              >
+                Twitter
+              </a>
             </div>
-            <p>Email: <a href="mailto:support@urbfarms.com" className="hover:text-green-300">support@urbfarms.com</a></p>
-            <p>Phone: <a href="tel:+91-9876543210" className="hover:text-green-300">+91-9876543210</a></p>
+
+            <address className="not-italic space-y-2">
+              <p>
+                Email:{' '}
+                <a href="mailto:support@urbfarms.com" className="hover:text-green-300">
+                  support@urbfarms.com
+                </a>
+              </p>
+              <p>
+                Phone:{' '}
+                <a href="tel:+91-9876543210" className="hover:text-green-300">
+                  +91-9876543210
+                </a>
+              </p>
+            </address>
           </div>
         </div>
 
-        {/* Copyright - Centered at Bottom */}
-        <div className="text-white text-lg text-center">
-          <h2>© {new Date().getFullYear()} urb<span className='font-extrabold'>FARMS</span>. All rights reserved.</h2>
+        {/* Bottom - Centered Copyright */}
+        <div className="text-white text-center text-lg pt-4 border-t border-green-500/30">
+          <h2>
+            © {new Date().getFullYear()} urb
+            <span className="font-extrabold">FARMS</span>. All rights reserved.
+          </h2>
         </div>
       </div>
     </footer>

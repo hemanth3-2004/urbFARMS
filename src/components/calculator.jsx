@@ -16,7 +16,7 @@ const CropProfitCalculator = () => {
   const [area, setArea] = useState(100);
   const [crop, setCrop] = useState("Microgreens");
   const [useCustomPrice, setUseCustomPrice] = useState(false);
-  const [customPrice, setCustomPrice] = useState(0);
+  const [customPrice, setCustomPrice] = useState("");
   const [profit, setProfit] = useState(null);
 
   const handleCalculate = () => {
@@ -41,7 +41,7 @@ const CropProfitCalculator = () => {
     setArea(100);
     setCrop("Microgreens");
     setUseCustomPrice(false);
-    setCustomPrice(0);
+    setCustomPrice("");
     setProfit(null);
   };
 

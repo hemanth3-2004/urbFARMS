@@ -1,7 +1,8 @@
+
+
 import React, { useState } from "react";
 
-const gridItems = [
-    {
+const gridItems = [{
       id: 1,
       image: "https://www.ecofarmingdaily.com/wp-content/uploads/Photo1-4-1024x680.jpg",
       label: "Microgreens",
@@ -125,7 +126,8 @@ const Boxes = () => {
 
   return (
     <div className="w-full p-4" style={{ backgroundColor: "#faf4eb" }}>
-      <div className="max-w-[900px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 w-[100%]">
+      {/* Crop Grid */}
+      <div className="max-w-[900px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 w-full">
         {gridItems.map((item) => (
           <div
             key={item.id}
@@ -144,21 +146,28 @@ const Boxes = () => {
         ))}
       </div>
 
-      {/* Overlay - Show Details When Item is Clicked */}
+      {/* Modal */}
       {selectedItem && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md text-center">
+        <div className="fixed inset-0 bg-black/50 z-50 flex justify-center items-center px-4">
+          <div className="bg-white p-6 rounded-lg shadow-xl w-full max-w-md max-w-[90vw] overflow-y-auto max-h-[90vh]">
             <h2 className="text-xl font-bold mb-2">{selectedItem.label}</h2>
             <p><strong>Best Method:</strong> {selectedItem.method}</p>
             <p><strong>Time to Harvest:</strong> {selectedItem.harvest}</p>
             <p><strong>Light Needs:</strong> {selectedItem.light}</p>
-            <p><strong>Profitability:</strong> {selectedItem.profitability}</p>
             <p><strong>Watering:</strong> {selectedItem.watering}</p>
+            <p><strong>Profitability:</strong> {selectedItem.profitability}</p>
             <p><strong>Estimated Profit:</strong> {selectedItem.estimatedProfit}</p>
-            <button onClick={() => setSelectedItem(null)} className="mt-4 bg-red-500 text-white px-4 py-2 rounded">Close</button>
+            <p className="mt-2"><strong>Additional Info:</strong> {selectedItem.additionalInfo}</p>
+            <button
+              onClick={() => setSelectedItem(null)}
+              className="mt-4 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
+            >
+              Close
+            </button>
           </div>
         </div>
       )}
+
     </div>
   );
 };
