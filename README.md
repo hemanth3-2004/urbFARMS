@@ -21,6 +21,6 @@ Encourage a greener, healthier lifestyle by integrating agriculture into daily u
 🔗 https://urbfarms.netlify.app/
 
 🛠️ Tech Stack
-Frontend: React, JavaScript
+Frontend: React, JavaScript.
 ChatBot: ChatBase
 
