@@ -41,7 +41,7 @@ const CropProfitCalculator = () => {
     setArea(100);
     setCrop("Microgreens");
     setUseCustomPrice(false);
-    setCustomPrice(0);
+    setCustomPrice("");
     setProfit(null);
   };
 
