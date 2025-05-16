@@ -20,9 +20,6 @@ Encourage a greener, healthier lifestyle by integrating agriculture into daily u
 🌐 Live Website
 🔗 https://urbfarms.netlify.app/
 
-🎥 Demo Video
-📽️ Watch the Demo
-
 🛠️ Tech Stack
 Frontend: React, JavaScript
 ChatBot: ChatBase
