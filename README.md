@@ -14,6 +14,9 @@ Help users sell surplus produce, creating a source of additional income.
 
 Encourage a greener, healthier lifestyle by integrating agriculture into daily urban life.
 
+![image](https://github.com/user-attachments/assets/9709aaf6-8fb5-496e-9c8b-97b958e867ca)
+
+
 🌐 Live Website
 🔗 https://urbfarms.netlify.app/
 
