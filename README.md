@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/9709aaf6-8fb5-496e-9c8b-97b958e867ca)
+
 🌿 urbFARMS: Microfarming for Sustainable Urban Living
 urbFARMS was developed as part of a hackathon conducted at Dayananda Sagar Academy of Technology and Management (DSATM). The hackathon focused on solving real-world problems aligned with the United Nations Sustainable Development Goals (SDGs).
 
@@ -13,8 +15,6 @@ Promote sustainable, organic living through home-based farming.
 Help users sell surplus produce, creating a source of additional income.
 
 Encourage a greener, healthier lifestyle by integrating agriculture into daily urban life.
-
-![image](https://github.com/user-attachments/assets/9709aaf6-8fb5-496e-9c8b-97b958e867ca)
 
 
 🌐 Live Website
